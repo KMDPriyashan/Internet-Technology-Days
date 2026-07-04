@@ -119,10 +119,27 @@
 
 // document.write("<h1>Hello, World! 02</h1>");
 // console.log(document);
+//console.log(heading);
 
-console.log(document.title);
+//dom monipulation commit
+// console.log(document.title);
+
+// let heading = document.getElementById("heading");
+// heading.innerText = "Dulash Priyashan";
 
 let heading = document.getElementById("heading");
-heading.innerText = "Dulash Priyashan";
-//console.log(heading);
+let count = 0;
+function changeHeadingup(){
+    
+    count++;
+    heading.innerText = "Current value >"+count; 
+    console.log("Clicked..");
+}
+
+function changeHeadingDown(){
+    count--;
+    heading.innerText = "Current value >"+count;
+    console.log("Clicked..");
+}
+
 
