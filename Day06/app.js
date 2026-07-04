@@ -155,6 +155,8 @@
 // }
 
 
+
+//meke simple calculater ekak using + and - butten click 
 let lable = document.getElementById("output");
 
 
