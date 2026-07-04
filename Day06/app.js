@@ -200,7 +200,30 @@ function btnAddCustomerOnAction(){
 
 
     customerlist.push(customer);
+    loadData();
     console.log(customerlist);
+
+    
+}
+
+function loadData(){
+    let tblCustomer = document.getElementById("tblCustomer");
+
+    let body="";
+
+    for(let i=0;i<customerlist.length;i++){
+        body+= `<tr>
+            <th>${customerlist[i].name}</th>
+            <th>${customerlist[i].address}</th>
+            <th>${customerlist[i].age}</th>
+            <th>${customerlist[i].email}</th>
+            <th>${customerlist[i].salary}</th>
+        </tr>` ;
+    }
+    
+    tblCustomer.innerHTML=body;
+
+    console.log(tblCustomer);
 }
 
 
