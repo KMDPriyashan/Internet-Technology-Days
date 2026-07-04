@@ -127,19 +127,57 @@
 // let heading = document.getElementById("heading");
 // heading.innerText = "Dulash Priyashan";
 
-let heading = document.getElementById("heading");
-let count = 0;
-function changeHeadingup(){
+
+
+//heading change karanna puluvan function ekak hadala eken heading eka change karanna puluvan countable ekth ekakama 
+// let heading = document.getElementById("heading");
+// let count = 0;
+// function changeHeadingup(){
     
-    count++;
-    heading.innerText = "Current value >"+count; 
-    console.log("Clicked..");
+//     count++;
+//     heading.innerText = "Current value >"+count; 
+//     console.log("Clicked..");
+// }
+
+// function changeHeadingDown(){
+//     count--;
+//     heading.innerText = "Current value >"+count;
+//     console.log("Clicked..");
+// }
+
+// let heading = document.getElementById("heading");
+
+// function changename(){
+//     let textinput = document.getElementById("inputField");
+//     heading.innerText = textinput.value;
+//     console.log(inputField.value);
+
+// }
+
+
+let lable = document.getElementById("output");
+
+
+function addnumber(){
+    let num1 = document.getElementById("getNum1").value;
+    let num2 = document.getElementById("getNum2").value;
+
+    let total = parseInt(num1) + parseInt(num2);
+    lable.innerText = total;
+
+
 }
 
-function changeHeadingDown(){
-    count--;
-    heading.innerText = "Current value >"+count;
-    console.log("Clicked..");
+
+function minusnumber(){
+    let num1 = document.getElementById("getNum1").value;
+    let num2 = document.getElementById("getNum2").value;
+
+    let total = parseInt(num1) - parseInt(num2);
+    lable.innerText = total;
+
+
 }
+
 
 
