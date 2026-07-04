@@ -157,29 +157,54 @@
 
 
 //meke simple calculater ekak using + and - butten click 
-let lable = document.getElementById("output");
+// let lable = document.getElementById("output");
 
 
-function addnumber(){
-    let num1 = document.getElementById("getNum1").value;
-    let num2 = document.getElementById("getNum2").value;
+// function addnumber(){
+//     let num1 = document.getElementById("getNum1").value;
+//     let num2 = document.getElementById("getNum2").value;
 
-    let total = parseInt(num1) + parseInt(num2);
-    lable.innerText = total;
+//     let total = parseInt(num1) + parseInt(num2);
+//     lable.innerText = total;
 
 
+// }
+
+
+// function minusnumber(){
+//     let num1 = document.getElementById("getNum1").value;
+//     let num2 = document.getElementById("getNum2").value;
+
+//     let total = parseInt(num1) - parseInt(num2);
+//     lable.innerText = total;
+
+
+// }
+
+let customerlist = [];
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtname").value;
+    let txtAddress = document.getElementById("txtaddress").value;
+    let txtAge = document.getElementById("txtage").value;
+    let txtEmail = document.getElementById("txtemail").value;
+    let txtSalary = document.getElementById("txtsalary").value;
+
+    let customer ={
+        name:txtName,
+        address: txtAddress,
+        age: txtAge,
+        email: txtEmail,
+        salary: txtSalary
+    }
+
+
+    customerlist.push(customer);
+    console.log(customerlist);
 }
 
 
-function minusnumber(){
-    let num1 = document.getElementById("getNum1").value;
-    let num2 = document.getElementById("getNum2").value;
 
-    let total = parseInt(num1) - parseInt(num2);
-    lable.innerText = total;
-
-
-}
 
 
 
