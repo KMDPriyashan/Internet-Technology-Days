@@ -7,8 +7,30 @@
 </head>
 <body>
 
-    <h1>Dulash Priyashan</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias laborum reiciendis mollitia quibusdam minima perspiciatis, pariatur officiis? Fugit ab omnis deleniti. Quos explicabo dolore aliquid sequi inventore pariatur eum!</p>
+    <h1>Order Mnagemenet System</h1>
+    
+    <input type="text" placeholder="Enter Id" id="textorderId" style="height: 35px; width: 250px;"> <br><br>
+    <input type="text" placeholder="Enter Food Name" id="textordername" style="height: 35px; width: 250px;"> <br><br>
+    <input type="text" placeholder="Enter Category" id="textordercategory" style="height: 35px; width: 250px;"> <br><br>
+    <input type="text" placeholder="Enter Count" id="textordercount" style="height: 35px; width: 250px;"> <br><br>
+
+    <hr>
+
+    <input type="button" value="Food Order" onclick="btnaddOnaction()" style="background-color: blue; color: white;">
+    <input type="button" value="Search Order" onclick="btnsearchOnaction()" style="background-color: rgb(58, 231, 19); color: white;">
+    <input type="button" value="Delete Order" onclick="btndeleteOnaction()" style="background-color: rgb(255, 21, 0); color: white;">
+    <input type="button" value="Update Order" onclick="btnupdateOnaction()" style="background-color: rgb(187, 0, 255); color: white;">
+    <input type="button" value="clear Order" onclick="btnclearonaction()" style="background-color: rgb(0, 0, 0); color: white;">
+    <input type="button" value="View Orders" onclick="btnviewOnaction()" style="background-color: rgb(255, 0, 183); color: white;">
+
+    <table id="tblOrder">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
     <script src="app.js"></script>
 </body>
