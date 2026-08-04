@@ -45,7 +45,7 @@ function btnaddOnaction() {
     orderList.push(order);
     localStorage.setItem("orderList", JSON.stringify(orderList));
 
-    console.log(orderList);
+    console.log(orderList[orderList.length - 1].id);
     alert("Added successfully !..");
 
 }
